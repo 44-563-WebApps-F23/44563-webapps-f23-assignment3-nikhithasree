@@ -14,11 +14,17 @@
             <p>Gokarna is a <b>serene coastal gem</b>, captivates with its pristine beaches, sacred atmosphere, and laid-back charm, making it an enchanting haven for both <b>relaxation</b> and <b>spiritual contemplation</b>.
             </p>
         
+        <hr>
         <h3>Favourite Activities</h3>    
         <ol>
-            <li>River Rafting</li>
-            <li>Scuba Driving</li>
             <li>Trucking</li>
+            <li>Water Games
+                <ol>
+                    <li>River Rafting</li>
+                    <li>Scuba Driving</li>
+                </ol>
+            </li>
+            <li>Swimming</li>
         </ol>
         <h3>Favourite Food dishes</h3>
         <ul>
@@ -27,6 +33,71 @@
             <li>Pizza</li>
         </ul>
         <a href="mystats.html">You can check mystats here...</a>
+        <hr>
+        <h3>Sports Recommendation</h3>
+        <p>I recommend the following sports for good physcial and mental health.</p>
+        <table border = "2px">
+            <tr>
+                <th>Name of the Sport</th>
+                <th>Reason for Recommendation</th>
+                <th>Avg. hours to be spent in a week</th>
+            </tr>
+            <tr>
+                <td>Cricket</td>
+                <td>Good phyical exercise</td>
+                <td>4Hrs</td>
+            </tr>
+            <tr>
+                <td>Chess</td>
+                <td>Improves thinking ability</td>
+                <td>3Hrs</td>
+            </tr>
+            <tr>
+                <td>Swimming</td>
+                <td>Mind relaxation</td>
+                <td>4Hrs</td>
+            </tr>
+            <tr>
+                <td>Cycling</td>
+                <td>Good for strength</td>
+                <td>6Hrs</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Sass Overflow Resolving</h3>
+        <blockquote>How Optional[value] is getting printed?</blockquote>
+        <a href="https://stackoverflow.com/questions/77067345/optionalvalue-is-getting-printed">Print the sum of all list numbers and return the sum</a>
+        <pre>
+            public static void main(String[] args) {
+    
+                printSumOfAllNumbersInList(List.of(12,45,34,22,56,65));
+                printSumOfAllNumbersInListUsingFP(List.of(12,45,34,22,56,65));
+            }
+            
+            private static void printSumOfAllNumbersInListUsingFP(List<Integer> list) {
+                
+                /*
+                 * Learning the use of reduce()
+                 */
+                System.out.println(list.stream().reduce(PStructured01::printSum));
+                
+            }
+            
+            private static int printSum(int a,int b)
+            {
+                int sum  =  a +b;
+                return sum;
+                        
+                        
+            }
+            private static void printSumOfAllNumbersInList(List<Integer> list) {
+                int sum = 0;
+                for (Integer integer: list) {
+                    sum = sum + integer;
+                }
+                System.out.println(sum);
+            }
+        </pre>
     </body>
 </html>
 
